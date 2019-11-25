@@ -7,7 +7,9 @@ Generator::Generator() {
 }
 
 void Generator::addQueue(std::array<Queue, 5> &queues) {
-    (*this).queues = queues;
+    (*this).queues = queues; 
+     //Callum: Generator will own a vector (or array) of Queue pointers, and this vector will be passed in as an argument
+     // in the Generator constructor so this method might not be necessary.
 }
 
 int Generator::randomCategory(int i) {
